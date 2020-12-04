@@ -1,4 +1,4 @@
-"""geekshop_denis URL Configuration
+"""Geekshop_Denis_Ershov URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -20,6 +20,9 @@ from mainapp import views as mainapp_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', mainapp_views.index),
-    path('products/', mainapp_views.products)
+    path('', mainapp_views.index, name='index'),
+    path('products/', mainapp_views.products, name='products'),
+    path('test-context/', mainapp_views.test_context),
 ]
+
+
