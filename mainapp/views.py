@@ -16,9 +16,7 @@ def products(request, pk=None):
     title_text_products = {
         'title': 'geekshop - продукты',
         'title_text': 'geekshop меню',
-
         'products': Product.objects.all(),
-
     }
     products = title_text_products['products']
     return render(request, 'mainapp/products.html', context=title_text_products)
