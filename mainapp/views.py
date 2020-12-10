@@ -12,7 +12,8 @@ def index(request):
     return render(request, 'mainapp/index.html', title_text_index)
 
 
-def products(request):
+def products(request, pk=None):
+    print(pk)
     title_text_products = {
         'title': 'geekshop - продукты',
         'title_text': 'geekshop меню',
