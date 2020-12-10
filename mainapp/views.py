@@ -6,8 +6,9 @@ from mainapp.models import Product, ProductCategory
 def index(request):
     title_text_index = {
         'title': 'geekShop - главная',
-        'title_text': 'geekshop главная'
+        'title_text': 'geekshop главная',
     }
+
     return render(request, 'mainapp/index.html', title_text_index)
 
 
