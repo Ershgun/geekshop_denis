@@ -3,7 +3,7 @@ from django.urls import path, include
 from mainapp import views as mainapp_views
 from django.conf import settings
 from django.conf.urls.static import static
-from django.conf.urls import include
+
 
 urlpatterns = [
 
