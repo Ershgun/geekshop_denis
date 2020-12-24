@@ -13,10 +13,10 @@ def index(request):
 
 def products(request, pk=None):
     print(pk)
-
     title_text_products = {
         'title': 'geekshop - продукты',
         'title_text': 'geekshop меню',
+        'categories': ProductCategory.objects.all(),
         'products': Product.objects.all(),
     }
     products = title_text_products['products']
