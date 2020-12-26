@@ -4,7 +4,6 @@ from mainapp import views as mainapp_views
 from django.conf import settings
 from django.conf.urls.static import static
 
-
 urlpatterns = [
 
     path('admin/', admin.site.urls),
@@ -12,6 +11,7 @@ urlpatterns = [
     path('products/', include('mainapp.urls', namespace='products')),
     path('auth/', include('authapp.urls', namespace='auth')),
     path('baskets/', include('basketapp.urls', namespace='baskets')),
+    path('admin-staff/', include('adminapp.urls', namespace='admin_staff')),
 
 ]
 
